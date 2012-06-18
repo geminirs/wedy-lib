@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<html><!-- InstanceBegin template="/Templates/en-frame.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Arcus9 - HomePage</title>
+<!-- InstanceEndEditable -->
+<meta name="description" content="Arcus9 for VMware provides full management of your VMware vSphere environment as a service (SaaS).">
+<meta name="keywords" content="VMware, Virtualization Monitoring, Arcus9, SaaS, Software as a Service,虚拟化监控">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content = "width = device-width, initial-scale = 1, user-scalable = yes" />
+<link rel="stylesheet" type="text/css" href="../inc/styles/en.css">
+<script language="javascript" src="../inc/js/jquery-1.6.4.min.js"></script>
+<script language="javascript" src="../inc/js/dme.js"></script>
+<script language="javascript" src="../inc/js/html5.js"></script>
+<script language="javascript" src="../inc/js/jquery.placeholder.min.js"></script>
+<script language="javascript" src="../inc/js/quickLogin.js"></script>
+<script language="javascript" src="../inc/js/application.js"></script>
+<script language="javascript" src="../inc/js/validation/jquery.validate.js"></script>
+<script language="javascript" src="../inc/js/validation/additional-methods.js"></script>
+<script language="javascript" src="../inc/js/validation/dme-additional-methods.js"></script>
+<script language="javascript" src="../inc/js/validation/grails-validation-methods.js"></script>
+<script language="javascript" src="../inc/js/dmeUtil.js"></script>
+<script language="javascript" src="../inc/js/i18n_messages.js"></script>
+<script language="javascript" src="../inc/js/externalOAuth2Login.js"></script>
+<script language="javascript">
+	var application = new Application({lang:'en'});
+	var externalOAuth2Login = new ExternalOAuth2Login();
+	var switchTo5x=true;	
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', application.getGoogleAnalyticsTrackingId()]);
+	_gaq.push(['_setDomainName', application.getGoogleAnalyticsTrackingDomain()]);
+	_gaq.push(['_trackPageview']);
+
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<script language="javascript" src="../inc/js/jquery.jswipe-0.1.2.js"></script>
+<link rel="stylesheet" type="text/css" href="../inc/styles/home.css">
+<link rel="stylesheet" type="text/css" href="../inc/styles/account.css">
+<style>
+#brandBox {height: 430px; background: url("../inc/img/bg-splash.gif") no-repeat scroll center 0 transparent;}
+.brandBoxContainer {width: 1050px; margin: 0 auto; position: relative; }
+  
+	#preSlide, #nextSlide {display: block; width: 22px; height: 37px; position: absolute; background-repeat: no-repeat; }
+    #preSlide { background-image: url(../inc/img/icon-go-left.png); background-position: left center; float: left; left: 0 ; top: 156px;}
+  
+    #nextSlide {background-image: url(../inc/img/icon-go-right.png); background-position: left center; float: right; right: 0 ;top: 156px; }
+    #preSlide:hover, #nextSlide:hover{background-position: left bottom;}
+    #preSlide.disabled, #nextSlide.disabled{background-position: left top;}
+    #slider {width: 980px; height: 375px; overflow: hidden;  margin: 0 auto; position: relative; box-shadow: 2px 2px 10px #888;}
+    #sliderContent {width:9000px; height: 375px; position: absolute; left: 0; top: 0; }
+  	#sliderContent img {width: 980px; height: 375px;}
+    #brandNav { float: left; width: 100%;  position: relative;}
+  		#brandNav ul { clear: left; float: left; position: relative; left: 50%; text-align: center;}
+	    #brandNav li {display: block; float: left; position: relative; right: 50%; padding: 15px 20px; border: 1px dotted #ccc; cursor: pointer; color: #888; font-size: 14px; }
+	    #brandNav li:hover {color: #404040;} 
+	    #brandNav li.active {background: url(../inc/img/icon-arrow-up.gif) no-repeat center 8px; color: #404040;}
+	
+
+</style>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="mask" style="display:none;"></div>
+
+<div id="wrapper">
+  <header>
+    <div class="headerContainer"> 
+      <!--[if lte IE 7]>
+			<div class="popLayer" id='oldBrowserInfo'>
+				<img src='/content/inc/img/icon-close.png' class='closeLayerImg'  width='23' height='23' title='Close' alt='Close' onClick="$(this).parent().remove();"/>
+				<h3 class='popTitle warn'>Browser Not Support</h3>
+				<div class='popContentWrapper'>
+					<p>We're sorry, but the browser you're using is not supported.</p>
+					<p>Please change for another standard browser. Or some functionality may not work properly or at all.</p>
+				</div>
+			</div>		
+			<![endif]--> 
+      <a href="/content/en/index.html" id="logo" title="Arcus9"><img src="../inc/img/logo-arcus9.png" alt="Arcus9" /><span class="prodCloud" style='display: none;'></span></a> 
+      </div>
+  </header>
+  
+  <section id="navigation">
+    <nav class="navigationContainer cf">
+      <ul id="siteNav" class="cf">
+      	<li class="active" id="home"><a href="index.html"><b><span>Home</span></b></a></li>
+        <li id="products">
+        	<a href="#"><b><span>Products</span></b></a>
+            <div class="dropMenu">
+            	<dl>
+                	<dt>For Azure</dt>
+                    <dd><a href="appPerformance/guided-tour.html?Azure">Application Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?Azure">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Amazon Web Services</dt>
+                    <dd><a href="websites/guided-tour.html?Amazon">Site Availability and Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?Amazon">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Heroku</dt>
+                    <dd><a href="websites/guided-tour.html?Heroku">Site Availability and Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?Heroku">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Engine Yard</dt>
+                    <dd><a href="websites/guided-tour.html?EngineYard">Site Availability and Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?EngineYard">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For VMware</dt>
+                    <dd><a href="vmware/guided-tour.html?VMware">Performance and Capacity Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Hyper-V</dt>
+                    <dd><a href="hyperV/guided-tour.html?HyperV">Performance and Capacity Management</a></dd>
+                </dl>
+            </div>
+        </li>
+        <li id="support"><a href="/dme/contactUs/showSupport"><b><span>Support</span></b></a></li>
+        <li id="community"><a href="http://www.questcloudtools.com" target="_blank"><b><span>Community</span></b></a></li>
+        <!--<li id="customers"><a href="../Web/content/en/customers.html"><b><span>Customers</span></b></a></li>-->
+        <li id="buzz"><a href="buzz.html"><b><span>Buzz</span></b></a></li>
+        <!--<li id="aboutus"><a href="../Web/content/en/about.html"><b><span>About Us</span></b></a></li>-->
+      </ul>
+    </nav>
+  </section>
+  <!-- InstanceBeginEditable name="breadcrumb" -->   
+  <section id="breadcrumb">
+    	<div class="breadcrumbContainer">
+        	<a href="#">Arcus9</a> > <a href="#">Homepage</a>
+        </div>
+  </section>
+  <!-- InstanceEndEditable -->
+    
+  <!-- InstanceBeginEditable name="content" -->
+  
+    <section id="brandBox">
+    	<div class='brandBoxContainer'>
+        
+        	<a href="#" id="preSlide"></a> 
+            <a href="#" id="nextSlide"></a>
+        	<div id="slider" >    
+            	<div id="sliderContent"> 
+                	<img src="../inc/img/slide0.png" />
+                    <img src="../inc/img/slide0.png" />
+                    <img src="../inc/img/slide0.png" />
+                    <img src="../inc/img/slide0.png" />
+                </div>
+            </div>
+            <div id="brandNav">
+            	<ul class="cf">
+                	<li class="active">Azure Application Performance</li>
+                    <li>Cloud Cost Management</li>
+                    <li>Website Availability</li>
+                    <li>Virtualization</li>
+                </ul>
+            </div>
+        
+        	
+        </div>
+    </section>
+    
+    <section id="content">
+    	<div class="homeContentContainer cf">
+        	<div class="textWrapper" style="width: 620px;">
+                <h4> About Arcus9</h4>
+                <ul class="bulletList">
+                    <li><strong>Monitor</strong> your virtual infrastructure for problems with performance and availability;</li>
+                    <li><strong>Optimize</strong> the configuration and resource allocation to gain the greatest benefit for the least effort;</li>
+                    <li><strong>Examine</strong> the utilization and available capacity of for you virtual infrastructure;</li>
+                    <li><strong>Predict</strong> when you will need more resources;</li>
+                    <li><strong>Compare</strong> the use of your virtual infrastructure with that of your peers.</li>
+                </ul>
+            </div>
+            
+            <div class="dmeVideoDiv">
+                <h4>Video of Arcus9 for VMware</h4>
+                <img src="../inc/img/dme-promote-img-vmware.gif" alt="Arcus9 Video"> 
+                <a href='#' class="videoPlay" id="homePopVideo"><img src="../inc/img/img-play.png" alt="Play" title="Play"/></a>
+            </div> 
+        </div>
+    </section>
+	<!-- InstanceEndEditable -->
+  <section id="feedbackWrapper">
+        <div id="feedback"> 
+	        <a id="community" href="http://www.questcloudtools.com" target="_blank">
+				<script language="javascript">
+					document.write(getI18NMessage('community.label'));
+				</script> 
+			</a>
+	         &nbsp;|&nbsp;
+	        <a id="wiki" href="#" onclick="window.open('http://community.distributed-monkey-engine.com/mediawiki/index.php/Main_Page');">Wiki</a>
+	    </div>
+		<div id="shareThis">
+	        <span class='st_facebook' displayText='' title="Facebook"></span>
+	        <span class='st_twitter' displayText='' title="Twitter"></span>
+	        <span class='st_linkedin' displayText='' title="LinkedIn"></span>
+	        <span class='st_email' displayText='' title='Email'></span>
+	        <span class='st_sharethis' displayText='' title="ShareThis"></span>
+		</div>
+	</section>
+    
+  <div id="push"></div>
+
+</div>
+
+<footer>
+  <div class="footerContainer cf">
+    <p class="left"> 
+        <a href='/dme/contactUs/index'>Contact Us</a> 
+        &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+        <a href='/content/en/tou.html'>Terms & Conditions</a> 
+    </p>
+    <p class="right"> &copy; 2012 Quest Software, Inc. All rights reserved. <img src="../inc/img/logo-quest.png" alt="Quest" /> </p>
+  </div>
+</footer>
+<!-- InstanceBeginEditable name="popLayer" -->
+<!-- 
+<section id="feedbackWrapper">
+	<div id="feedback">
+    	Feedback
+        <a href="#" class="feedbackAction like" title="2 user like it.">Like</a>
+        <a href="#" class="feedbackAction unlike" title="1 user dislike it.">Unlike</a>
+        <a href="#" class="feedbackAction feedback" title="Send Us Feedback">Feedback</a>
+    </div>
+	<div id="liveChat">
+    	<img src="../inc/img/livechat-online.png" title="Live Chat Now!" />
+    </div>
+</section>
+ -->
+<div id="videoWrapper" class="popLayer" style="width: 640px; height: 400px;">
+                	<img src="../inc/img/icon-close.png" alt='Close' title="Close" class="closeLayerImg" />
+                	<h2 class="popTitle">Introduction to Arcus9 for VMware</h2>
+                    	<object id="flashObj" width="640" height="360" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0">
+                                    <param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" />
+                                    <param name="bgcolor" value="#FFFFFF" />
+                                    <param name="flashVars" value="videoId=1218907665001&playerID=921711326001&playerKey=AQ~~,AAAAuIVrAck~,krN9qiM0opYKYoALdOyviwVlUVll0IOF&domain=embed&dynamicStreaming=true&autoStart=true" />
+                                    <param name="base" value="http://admin.brightcove.com" />
+                                    <param name="seamlesstabbing" value="false" />
+                                    <param name="allowFullScreen" value="true" />
+                                    <param name="swLiveConnect" value="true" />
+                                    <param name="allowScriptAccess" value="always" />
+                                    <embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=1218907665001&playerID=921711326001&playerKey=AQ~~,AAAAuIVrAck~,krN9qiM0opYKYoALdOyviwVlUVll0IOF&domain=embed&dynamicStreaming=true&autoStart=true" base="http://admin.brightcove.com" name="flashObj" width="640" height="360" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+                        </object>
+                </div>
+
+
+<!-- InstanceEndEditable --> 
+<script language="javascript">
+$(function(){
+	var quickLogin = new QuickLogin({container:$(".headerContainer")});
+	quickLogin.append();		
+	$('input[placeholder], textarea[placeholder]').placeholder();	
+	
+	var bHeight = $(window).height();
+	var contentMinHeight = bHeight - 85-38-40-94-30;
+	$('.sideBar, .mainContent').css({'min-height':contentMinHeight });	
+
+	loadScript("http://w.sharethis.com/button/buttons.js",true,function(){stLight.options({publisher: "36390e37-7a7d-4fef-992c-62b1a2bb8c8d"});});
+	loadScript(application.getContentContextPath() + '/inc/js/livechat.js',true,'writeLiveChat()');
+	
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+});
+</script> 
+<!-- InstanceBeginEditable name="script" --> 
+<script>
+
+$(function(){
+	hightLightEngineTypeMenu('dme');
+	
+	if(isTablet){$('#preSlide, #nextSlide').hide();}
+	
+	$brandNavs = $('#brandNav li');
+	$slideContent = $('#sliderContent');
+	var left = 0; // current left offset of #slideContent
+	var activeIndex = 0; //which item is active, 0~3
+	var step = 980;  //width of each splash item
+	
+	function updateNavs(){
+		$('#brandNav li:eq('+activeIndex+')').addClass('active').siblings().removeClass('active');
+	}
+	function updateSlideBox(){
+		left = (-1) * activeIndex * step;
+        $slideContent.stop().animate({left:left}, 500);
+		updateNavs();
+	}
+	
+	$('#brandNav li').click(function(e) {
+		var index = $brandNavs.index(this);
+		activeIndex = index;
+		updateSlideBox();
+    });
+	
+	$('#preSlide').click(function(e) {
+		if(activeIndex === 0) { activeIndex = 4; };
+		activeIndex--;
+		updateSlideBox(); 
+    });
+	$('#nextSlide').click(function(e) {
+		if(activeIndex === 3) {	activeIndex = -1; }
+		activeIndex++;
+		updateSlideBox(); 
+    });
+	
+	setInterval(function(){
+		activeIndex = (activeIndex+1)%4; 
+		updateSlideBox();
+	}, 5000);
+	
+	// support swipe for iPad
+	$('#brandBox').swipe( {
+       	swipeLeft: moveRight,
+       	swipeRight: moveLeft,
+       	threshold: { x:30, y:90 }
+  	});
+	function moveLeft(){
+	  	if(activeIndex === 0) { activeIndex = 4; };
+		activeIndex--;
+		updateSlideBox(); 
+  	}
+  	function moveRight(){
+	  	if(activeIndex === 3) {	activeIndex = -1; }
+		activeIndex++;
+		updateSlideBox();
+	}
+  
+	
+	
+	$('.loginBtn').click(function(e) {
+        window.location.href='/en/my-account.html';
+    });
+	$('.trialBtn').click(function(e) {
+        window.location.href='/dme/login/auth';
+    });
+	
+	// video setting
+	var videoInit = function(){
+		var bHeight = $(window).height();
+		var bWidth = $(window).width();
+		var sHeight = $(document).height();
+		var sWidth = $(document).width();
+		var videoDivHeight = $('#videoWrapper').height();
+		var videoDivWidth = $('#videoWrapper').width();
+		var videoTop = (bHeight - videoDivHeight) /2 -50;	
+		var videoLeft = (bWidth - videoDivWidth) / 2;
+		$('#videoWrapper').css({'top':videoTop, 'left':videoLeft});
+		$('#mask').css({'height':sHeight, 'width':sWidth});
+	}
+	videoInit();
+	$('#homePopVideo').click(function(){
+		$('#mask').show();
+		$('#videoWrapper').fadeIn('fast');	
+	});
+	$(window).resize(function(){
+		videoInit();
+	});
+	
+	var feedback = new Feedback({product:'Arcus9',module:'HOME_PAGE',mFunction:'MAIN_HOME_PAGE',rateType:'LIKE_STYLE',rate:'',feedback:'',engineType:''});
+});
+</script> 
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

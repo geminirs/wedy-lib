@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Demo - Slider</title>
+<script language="javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript" src="js/slider.js"></script>
+<link href="styles/slider.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<section id="slider">
+	<a href="#" id="preSlide"></a>     <!--1st set of navigation in arrow-->
+    <a href="#" id="nextSlide"></a>
+    
+    <div id="viewport" >   <!--viewport to display slides-->
+      	<div id="slideContent">     <!--container to include all slides-->
+	      	<div class="slideItem"><img src="img/slide0.jpg" /></div>
+	      	<div class="slideItem"><img src="img/slide1.jpg" /></div>
+	      	<div class="slideItem"><img src="img/slide2.jpg" /></div>
+	      	<div class="slideItem"><img src="img/slide3.jpg" /></div>
+	    </div>
+    </div>
+
+    <ul id="slideNav" class="cf">			<!--2nd set of navigation in buttons-->
+        <li class="active">Slide 0</li>
+        <li>Slide 1</li>
+        <li>Slide 2</li>
+        <li>Slide 3</li>
+    </ul>
+
+</section>
+
+<script language="javascript">
+$(function(){
+	//sliderInit();	
+	//startInterval();
+});
+</script>
+
+</body>
+</html>

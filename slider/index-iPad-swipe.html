@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html><!-- InstanceBegin template="/Templates/en-frame.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Arcus9 - HomePage</title>
+<!-- InstanceEndEditable -->
+<meta name="description" content="Arcus9 for VMware provides full management of your VMware vSphere environment as a service (SaaS).">
+<meta name="keywords" content="VMware, Virtualization Monitoring, Arcus9, SaaS, Software as a Service,虚拟化监控">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content = "width = device-width, initial-scale = 1, user-scalable = yes" />
+<link rel="stylesheet" type="text/css" href="../inc/styles/en.css">
+<script language="javascript" src="../inc/js/jquery-1.6.4.min.js"></script>
+<script language="javascript" src="../inc/js/dme.js"></script>
+<script language="javascript" src="../inc/js/html5.js"></script>
+<script language="javascript" src="../inc/js/jquery.placeholder.min.js"></script>
+<script language="javascript" src="../inc/js/quickLogin.js"></script>
+<script language="javascript" src="../inc/js/application.js"></script>
+<script language="javascript" src="../inc/js/validation/jquery.validate.js"></script>
+<script language="javascript" src="../inc/js/validation/additional-methods.js"></script>
+<script language="javascript" src="../inc/js/validation/dme-additional-methods.js"></script>
+<script language="javascript" src="../inc/js/validation/grails-validation-methods.js"></script>
+<script language="javascript" src="../inc/js/dmeUtil.js"></script>
+<script language="javascript" src="../inc/js/i18n_messages.js"></script>
+<script language="javascript" src="../inc/js/externalOAuth2Login.js"></script>
+<script language="javascript">
+	var application = new Application({lang:'en'});
+	var externalOAuth2Login = new ExternalOAuth2Login();
+	var switchTo5x=true;	
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', application.getGoogleAnalyticsTrackingId()]);
+	_gaq.push(['_setDomainName', application.getGoogleAnalyticsTrackingDomain()]);
+	_gaq.push(['_trackPageview']);
+
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" type="text/css" href="../inc/styles/home.css">
+<link rel="stylesheet" type="text/css" href="../inc/styles/account.css">
+<style>
+#splash, #slider, #sliderContent, #sliderContent > div {--height: 356px; height: 290px; }
+
+#splash { height: 290px; background: url(../inc/img/bg-splash.png) no-repeat scroll center 0 transparent;}
+#splashContainer {width: 980px; margin: 0 auto; position: relative; font-size: 14px; }
+  
+    #slider {width: 100%; height: 316px;  overflow: hidden;  position: relative; }
+	    #sliderContent {width:9000px; height:290px;   position: absolute; left: 0; top: 0; }
+			#sliderContent > div.slideItemWrapper { width: 980px; float: left; padding-top: 20px; height: 336px; }
+				.centeredDiv { width: 980px; height: 255px;  margin: 0 auto; position: relative;}
+				#sliderContent > div.slideItemWrapper aside { float: left; margin-right: 70px; }
+					#sliderContent > div.slideItemWrapper aside img {width:300px; height: 200px; }
+				#sliderContent > div.slideItemWrapper article { float: left; margin-top: 6px;  }
+				#sliderContent > div.slideItemWrapper article .splashBtnWrapper { position: absolute; bottom: -10px; right: 10px; }
+				#sliderContent > div.slideItemWrapper article.twoColumnsLayout { width: 660px; }
+					#sliderContent > div.slideItemWrapper article.twoColumnsLayout .promoContent { width: 400px; float: left; }
+					#sliderContent > div.slideItemWrapper article.twoColumnsLayout .promoBtnWrapper {float: right; width: 250px; }
+
+		#slideNav {position: absolute; bottom: 5px; right: 46%;}
+			#slideNav li {float: left; width: 24px; height: 20px; cursor: pointer; background: url(../inc/img/icon-splash-nav.png) no-repeat center top; text-indent: -9999px; }
+			#slideNav li:hover{background-position: center center;}
+			#slideNav li.active{ background-position: center bottom;}
+			
+.tileBlock{ float: left; width: 292px; height: 144px; background-image: url(../inc/img/tile-block.png); margin: 4px 13px 5px 5px; cursor: pointer; }
+	.blueBlock {background-position: 6px 0px;}
+		.blueBlock:hover {background-position: -300px 0px;}
+	.orangeBlock { background-position: 6px -600px;}
+		.orangeBlock:hover {background-position: -300px -600px;}
+	.greenBlock { background-position: 6px -200px;}
+		.greenBlock:hover {background-position: -300px -200px;}
+	.redBlock { background-position: 6px -400px;}
+		.redBlock:hover {background-position: -300px -400px;}
+	.lightblueBlock { background-position: 6px -800px;}
+		.lightblueBlock:hover {background-position: -300px -800px;}
+	.pinkBlock { background-position: 6px -1000px;}
+		.pinkBlock:hover {background-position: -300px -1000px;}
+
+	.tileBlock h4 { font-size: 13px; color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); text-align:center; padding-left: 16px; line-height: 39px; margin-bottom: 0; }
+	.tileBlock ul {padding: 5px; height: 50px;}
+		.tileBlock ul li{ background: url(../inc/img/bullet-circle.png) no-repeat 11px 5px; padding-left: 25px; color: #555; margin: 3px 0;}
+	.tileBlock > a { text-decoration: none; float: right; padding-right: 18px; padding-top: 7px; background: url(../inc/img/bg-tile-arrow.png) no-repeat right 11px; margin-right: 20px; }
+		.tileBlock > a:hover { background-image: url(../inc/img/bg-tile-arrow-highlight.png);}
+	
+</style>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="mask" style="display:none;"></div>
+
+<div id="wrapper">
+  <header>
+    <div class="headerContainer"> 
+      <!--[if lte IE 7]>
+			<div class="popLayer" id='oldBrowserInfo'>
+				<img src='/content/inc/img/icon-close.png' class='closeLayerImg'  width='23' height='23' title='Close' alt='Close' onClick="$(this).parent().remove();"/>
+				<h3 class='popTitle warn'>Browser Not Support</h3>
+				<div class='popContentWrapper'>
+					<p>We're sorry, but the browser you're using is not supported.</p>
+					<p>Please change for another standard browser. Or some functionality may not work properly or at all.</p>
+				</div>
+			</div>		
+			<![endif]--> 
+      <a href="/content/en/index.html" id="logo" title="Arcus9"><img src="../inc/img/logo-arcus9.png" alt="Arcus9" /><span class="prodCloud" style='display: none;'></span></a> 
+      </div>
+  </header>
+  
+  <section id="navigation">
+    <nav class="navigationContainer cf">
+      <ul id="siteNav" class="cf">
+      	<li class="active" id="home"><a href="index.html"><b><span>Home</span></b></a></li>
+        <li id="products">
+        	<a href="#"><b><span>Products</span></b></a>
+            <div class="dropMenu">
+            	<dl>
+                	<dt>For Azure</dt>
+                    <dd><a href="appPerformance/guided-tour.html?Azure">Application Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?Azure">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Amazon Web Services</dt>
+                    <dd><a href="websites/guided-tour.html?Amazon">Site Availability and Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?Amazon">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Heroku</dt>
+                    <dd><a href="websites/guided-tour.html?Heroku">Site Availability and Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?Heroku">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Engine Yard</dt>
+                    <dd><a href="websites/guided-tour.html?EngineYard">Site Availability and Performance</a></dd>
+                    <dd><a href="costManage/guided-tour.html?EngineYard">Cost Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For VMware</dt>
+                    <dd><a href="vmware/guided-tour.html?VMware">Performance and Capacity Management</a></dd>
+                </dl>
+                <dl>
+                	<dt>For Hyper-V</dt>
+                    <dd><a href="hyperV/guided-tour.html?HyperV">Performance and Capacity Management</a></dd>
+                </dl>
+            </div>
+        </li>
+        <li id="support"><a href="/dme/contactUs/showSupport"><b><span>Support</span></b></a></li>
+        <li id="community"><a href="http://www.questcloudtools.com" target="_blank"><b><span>Community</span></b></a></li>
+        <!--<li id="customers"><a href="../Web/content/en/customers.html"><b><span>Customers</span></b></a></li>-->
+        <li id="buzz"><a href="buzz.html"><b><span>Buzz</span></b></a></li>
+        <!--<li id="aboutus"><a href="../Web/content/en/about.html"><b><span>About Us</span></b></a></li>-->
+      </ul>
+    </nav>
+  </section>
+  <!-- InstanceBeginEditable name="breadcrumb" -->   
+  <section id="breadcrumb">
+    	<div class="breadcrumbContainer">
+        	<a href="#">Arcus9</a> > <a href="#">Homepage</a>
+        </div>
+  </section>
+  <!-- InstanceEndEditable -->
+    
+  <!-- InstanceBeginEditable name="content" -->
+  
+    <section id="splash">
+    	<div id="splashContainer">
+        	<div id="slider" >    
+            	<div id="sliderContent"> 
+                
+                <div class="slideItemWrapper">
+                    	<div class="centeredDiv cf">
+                            <aside><img src="../inc/img/ipad.png" /></aside>
+                            <article>
+                            	<hgroup>
+                                    <h1>How are your Cloud Applications performing?</h1>        
+                                    <h2>Application performance at a glance.</h2>
+                                </hgroup>
+                                <ul class="promoList">
+                                        <li>Know how your applications are performing</li>
+                                        <li>Be sure that your application is available</li>
+                                        <li>Understand your end-users' experience</li>
+                                        <li>Gain visibility into workload</li>
+                                        <li>Get alerts for critical issues</li>
+                                </ul>
+                                <div class="splashBtnWrapper">
+                                	<input type="button" class="trialBtn" value="Learn More" onClick="location.href='appPerformance/guided-tour.html'">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="slideItemWrapper">
+                    	<div class="centeredDiv cf">
+                            <aside><img src="../inc/img/ipad.png" /></aside>
+                            <article>
+                            	<hgroup>
+                                    <h1>Have you got a grip on your cloud costs?</h1>        
+                                    <h2>Take control of your cloud spend.</h2>
+                                </hgroup>
+                                <ul class="promoList">
+                                        <li>Get budget alerts</li>
+                                        <li>See current vs. projected spend</li>
+                                        <li>Identify waste</li>
+                                        <li>Get reports across all your accounts</li>
+                                </ul>
+                                <div class="splashBtnWrapper">
+                                	<input type="button" class="trialBtn" value="Learn More" onClick="location.href='costManage/guided-tour.html'">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                
+                	<div class="slideItemWrapper">
+                    	<div class="centeredDiv cf">
+                            <aside><img src="../inc/img/ipad.png" /></aside>
+                            <article>
+                            	<hgroup>
+                                	<h1>Do you always know that you site is available?</h1>
+                                    <h2>Don’t assume it is, know that it is.</h2>
+                                </hgroup>
+                                <ul class="promoList">
+                                    <li>Monitor performance and Availability 24x7</li>
+                                    <li>Test from multiple locations</li>
+                                    <li>Get problem alerts</li>
+                                    <li>Generate reports</li>
+                                </ul>
+                                <div class="splashBtnWrapper">
+                                	<input type="button" class="trialBtn" value="Learn More" onClick="location.href='websites/guided-tour.html'">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="slideItemWrapper">
+                    	<div class="centeredDiv cf">
+                            <aside><img src="../inc/img/vmware-splash.png" /></aside>
+                            <article>
+                                <div class="promoContent">
+                                	<hgroup>
+                                        <h1>Gaining the most out of your private cloud?</h1> 
+                                        <h2>Get more from your virtual infrastructure</h2>
+                                    </hgroup>
+                                    <ul class="promoList">
+                                        <li>Monitor performance and Availability</li>
+                                        <li>Optimize allocation and configuration</li>
+                                        <li>Examine current Capacity</li>
+                                        <li>Predict future needs</li>
+                                        <li>Compare yourself with your peers</li>
+                                    </ul>
+                                    <div class="splashBtnWrapper">
+    	                            	<input type="button" class="trialBtn" value="Learn More" onClick="location.href='hyperV/guided-tour.html'">
+	                                </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="slideItemWrapper">
+                    	<div class="centeredDiv cf">
+                            <aside><img src="../inc/img/azure-splash.png" /></aside>
+                            <article class="twoColumnsLayout">
+                                <div class="promoContent">
+                                    <h1 class="mb20">Azure Applications</h1>
+                                    <p class="mb15">Application performance at a glance</p>
+                                    <ul class="promoList">
+                                        <li>know how your applications are performing</li>
+                                        <li>be sure that your application is available</li>
+                                        <li>know how real users are experiencing it</li>
+                                        <li>know how heavily loaded it is</li>
+                                        <li>get alerts for critical issues</li>
+                                    </ul>
+                                </div>
+                                <div class="promoBtnWrapper">
+                                    <input type="button" class="trialBtn" value="Join Free Beta">
+                                    <input type="button" class='testBtn' value="View Live Now">
+                                    <input type="button" class="pricingBtn greyBtn underConstructionTrigger" value="Future Pricing">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                </div>
+                <ul id="slideNav">
+                	<li class='active'>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="content">
+    	<!--<img src="../inc/img/img-tile.png" style="display: block; width: 983px; margin: 30px auto 0;"/>-->
+    	<div class="homeContentContainer cf">
+        	<div class="tileBlock blueBlock" onClick="location.href='solutions-for-azure-apps.html'">
+            	<h4>Azure Apps Management</h4>
+                <ul>
+                	<li>Check availability and usage</li>
+                    <li>Optimize performance</li>
+                    <li>Catch cost increases before you get the bill</li>
+                </ul>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="tileBlock orangeBlock" onClick="location.href='solutions-for-amazon-web-service.html'">
+            	<h4>AWS Apps Management</h4>
+                <ul>
+                	<li>Check site availability and performance</li>
+                    <li>Catch cost increases before you get the bill</li>
+                </ul>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="tileBlock greenBlock" onClick="location.href='solutions-for-heroku.html'">
+            	<h4>Heroku Apps Management</h4>
+                <ul>
+                	<li>Check site availability, and performance</li>
+                    <li>Catch cost increases before you get the bill</li>
+                </ul>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="tileBlock redBlock" onClick="location.href='solutions-for-engine-yard.html'">
+            	<h4>Engine Yard Apps Management</h4>
+                <ul>
+                	<li>Check site availability and performance</li>
+                    <li>Catch cost increases before you get the bill</li>
+                </ul>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="tileBlock lightblueBlock" onClick="location.href='solutions-for-hyperv.html'">
+            	<h4>Hyper-V Management</h4>
+                <ul>
+                	<li>Monitor health, availability and performance</li>
+                    <li>Optimize resource usage and configuration</li>
+                    <li>Examine and predict capacity</li>
+                </ul>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="tileBlock pinkBlock" onClick="location.href='solutions-for-vmware.html'">
+            	<h4>VMware Management</h4>
+                <ul>
+                	<li>Monitor health, availability and performance</li>
+                    <li>Optimize resource usage and configuration</li>
+                    <li>Examine and predict capacity</li>
+                </ul>
+                <a href="#">Learn More</a>
+            </div>
+        	
+        </div>
+    </section>
+	<!-- InstanceEndEditable -->
+  <section id="feedbackWrapper">
+        <div id="feedback"> 
+	        <a id="community" href="http://www.questcloudtools.com" target="_blank">
+				<script language="javascript">
+					document.write(getI18NMessage('community.label'));
+				</script> 
+			</a>
+	         &nbsp;|&nbsp;
+	        <a id="wiki" href="#" onclick="window.open('http://community.distributed-monkey-engine.com/mediawiki/index.php/Main_Page');">Wiki</a>
+	    </div>
+		<div id="shareThis">
+	        <span class='st_facebook' displayText='' title="Facebook"></span>
+	        <span class='st_twitter' displayText='' title="Twitter"></span>
+	        <span class='st_linkedin' displayText='' title="LinkedIn"></span>
+	        <span class='st_email' displayText='' title='Email'></span>
+	        <span class='st_sharethis' displayText='' title="ShareThis"></span>
+		</div>
+	</section>
+    
+  <div id="push"></div>
+
+</div>
+
+<footer>
+  <div class="footerContainer cf">
+    <p class="left"> 
+        <a href='/dme/contactUs/index'>Contact Us</a> 
+        &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+        <a href='/content/en/tou.html'>Terms & Conditions</a> 
+    </p>
+    <p class="right"> &copy; 2012 Quest Software, Inc. All rights reserved. <img src="../inc/img/logo-quest.png" alt="Quest" /> </p>
+  </div>
+</footer>
+<!-- InstanceBeginEditable name="popLayer" -->
+
+<!-- InstanceEndEditable --> 
+<script language="javascript">
+$(function(){
+	var quickLogin = new QuickLogin({container:$(".headerContainer")});
+	quickLogin.append();		
+	$('input[placeholder], textarea[placeholder]').placeholder();	
+	
+	var bHeight = $(window).height();
+	var contentMinHeight = bHeight - 85-38-40-94-30;
+	$('.sideBar, .mainContent').css({'min-height':contentMinHeight });	
+
+	loadScript("http://w.sharethis.com/button/buttons.js",true,function(){stLight.options({publisher: "36390e37-7a7d-4fef-992c-62b1a2bb8c8d"});});
+	loadScript(application.getContentContextPath() + '/inc/js/livechat.js',true,'writeLiveChat()');
+	
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+});
+</script> 
+<!-- InstanceBeginEditable name="script" --> 
+<script>
+
+$(function(){
+	hightLightEngineTypeMenu('dme');
+	
+	// splash banner display
+	$slideContent = $('#sliderContent');
+	$slideNavs = $('#slideNav li');
+	var left = 0; // current left offset of #slideContent
+	var activeIndex = 0; //which item is active, 0~3
+	var step = 980;  //width of each splash item
+	var rotateInterval;
+	var windowWidth;
+	function setSlideWidth(){
+		windowWidth = $(window).width();
+		$('#splashContainer, #sliderContent > div.slideItemWrapper').css({width: windowWidth});
+		step = windowWidth;
+	}
+	
+	function startInterval(){
+		rotateInterval = setInterval(function(){
+				activeIndex = (activeIndex+1)%4; 
+				updateSlideBox();
+		}, 500000);	
+	}
+	
+	function updateSlideBox(){
+		left = (-1) * activeIndex * step;
+        $slideContent.stop().animate({left:left}, 500);  //switch to another banner
+		$('#slideNav li:eq('+activeIndex+')').addClass('active').siblings().removeClass('active'); //updateNavs();
+		clearInterval(rotateInterval);   //reset rotate interval
+		startInterval();
+	}
+
+	setSlideWidth();
+	startInterval();
+	$('#slideNav li').click(function(e) {	
+		var index = $slideNavs.index(this);
+		activeIndex = index;
+		updateSlideBox();
+    });
+	$(window).resize(function(e) {
+        setSlideWidth();
+    });
+	
+	// support swipe for iPad
+	if(isTablet){ alert('iPad'); loadScript('../inc/js/jquery.jswipe-0.1.2.js', true)}
+	$('#brandBox').swipe( {
+       	swipeLeft: moveRight,
+       	swipeRight: moveLeft,
+       	threshold: { x:30, y:90 }
+  	});
+	function moveLeft(){
+	  	if(activeIndex === 0) { activeIndex = 4; };
+		activeIndex--;
+		updateSlideBox(); 
+  	}
+  	function moveRight(){
+	  	if(activeIndex === 3) {	activeIndex = -1; }
+		activeIndex++;
+		updateSlideBox();
+	}
+  
+});
+</script> 
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

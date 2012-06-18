@@ -1,0 +1,20 @@
+@import url(reset.css);
+@import url(global.css);
+
+#slider { margin: 50px auto 0;  position: relative; }
+	
+	#viewport { position: relative; overflow: hidden; }
+
+	#slideContent { width: 9000px; position: absolute; }
+		.slideItem { float: left; background: #eee; }
+			.slideItem img { display: block; margin: 0 auto;}
+
+	#slideNav { float: left; position: relative; left: 50%;  }
+		#slideNav li { float: left; position: relative; right: 50%; list-style-type: none; border: 1px dashed #ccc; padding: 10px; color: #999; cursor: pointer; }
+		#slideNav li:hover { color: #404040; }
+		#slideNav li.active { color: #404040; background: url(../img/img-arrow.gif) no-repeat center 4px; }
+
+	#preSlide, #nextSlide { display: block; width: 22px; height: 37px; position: absolute; top: 130px; z-index:5; background-repeat: no-repeat; background-position: center; }
+	#preSlide { left: -50px; background-image: url(../img/img-previous.png); }
+	#nextSlide { right: -50px; background-image: url(../img/img-next.png); }
+		#preSlide:hover, #nextSlide:hover { background-position: bottom;}

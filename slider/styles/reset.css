@@ -1,0 +1,70 @@
+/* 
+	Date:			2011-11-17 
+	Description:	To reset common used tags
+*/
+
+body,
+dl, dd,
+h1, h2, h3, h4, h5, h6,
+p, form,
+pre, textarea {
+	margin: 0;	
+	padding: 0;
+}
+
+ul, ol, li {
+	margin: 0;
+	padding: 0;	
+}
+
+td, th, input {
+	padding: 0;	
+}
+
+input, select, textarea, button {
+	vertical-align: middle;
+	border: none;
+	background: #fff;
+	font-size: 100%;	
+}
+br {
+	line-height: 0;
+	font-size: 0;	
+}
+li {
+	list-style-type: none;
+	list-style-position: outside;	
+}
+img {
+	vertical-align: top;
+	border: 0;	
+}
+ul{
+	list-style: none;	
+}
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	font-family: "Courier New";	
+}
+em, i {
+	font-weight: normal;
+	font-style: normal;	
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;	
+}
+td, th {
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;	
+}
+
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}

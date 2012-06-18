@@ -1,0 +1,95 @@
+/* 
+	Date:			2011-11-17 
+	Description:	Lib for all sites
+	
+*/
+
+
+/* setting with constants */
+
+@import url(reset.css);
+
+.db { display: block; }
+.dib { display: inline-block; }
+.di { display: inline; }
+.hide { display: none; }
+.vhidden { visibility: hidden; }
+.rel { position: relative; }
+.abs { position: absolute; }
+
+.fl, .left { float: left; }
+.fr, .right { float: right; }
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.cf { *zoom: 1; }
+.cf:after { 
+	content: '';
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	display: block;
+}
+.overflow { overflow: auto; *zoom: 1;}
+
+.fwb, .strong { font-weight: bold; }
+.fwn { font-weight: normal; }
+
+.tdn { text-decoration: none; }
+.tdu { text-decoration: underline; }
+.tdl { text-decoration: line-through; }
+
+.tac { text-align: center; }
+.tal { text-align: left; }
+.tar { text-align: right; }
+.vam { vertical-align: middle; }
+.vat { vertical-align: top; }
+.vab { vertical-align: bottom; }
+
+
+
+/* setting with variables */
+.br0{ border-right: none;}
+.bb0{ border-bottom: none;}
+.p10 { padding: 10px; }
+.plr10 { padding: 0 10px; }
+.pt10 { padding-top: 10px; }
+
+
+
+
+
+.m10 { margin: 10px; }
+.mtb10 { margin: 10px 0; }
+.mlr10 { margin: 0 10px; }
+
+.mb0{margin-bottom: 0;}
+.mb1{margin-bottom: 1px;}
+.mb2{margin-bottom: 2px;}
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mb50{margin-bottom: 50px;}
+.mb100{margin-bottom: 100px;}
+
+.mt0{margin-top: 0;}
+.mt1{margin-top: 1px;}
+.mt2{margin-top: 2px;}
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px; }
+.mt20{margin-top: 20px; }
+.mt30{margin-top: 30px;}
+.mt50{margin-top: 50px;}
+.mt100{margin-top: 100px;}
+
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 20px;}
+.ml30{margin-left: 30px;}
+.ml50{margin-left: 50px;}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr30{margin-right: 30px;}
+.mr50{margin-right: 50px;}
